@@ -9,6 +9,7 @@ const OutputInstructions = () => {
           <p className="about">Links</p>
           <p className="about">Weather</p>
           <p className="about">Latest News</p>
+          <p className="about">Home</p>
           <br />
         </div>
     )
