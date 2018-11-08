@@ -1,0 +1,213 @@
+body {
+  background: black;
+  font-family: Consolas;
+}
+
+.App {
+  text-align: left;
+  height: 100%;
+}
+
+.luis {
+  text-align: center;
+  margin-top: 140px;
+  font-family: Consola;
+  /* -webkit-animation: fadein 7s; Safari, Chrome and Opera > 12.1 */
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@font-face {
+  font-family: Consola;
+  src: url('Consolas.ttf');
+}
+.panels {
+  display: flex;
+  font-family: Consola;
+  align-items: center;
+  height: 60vh;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 140px;
+  -webkit-animation: fadein 10s;
+}
+
+.input-box {
+  background: rgba(0, 0, 0, 0.19);
+  border: 3px solid #68e6a8;
+  color: #68e6a8;
+  font-size: .85em;
+  font-weight: 100;
+  font-family: Consola;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 10px;
+  resize: none;
+  /* height: 225px;
+  width: 225px; */
+  text-shadow: 0 0 5px rgba(192, 244, 218, 0.5);
+  text-transform: uppercase;
+  box-shadow: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  /* -webkit-animation: fadein 17s; */
+}
+
+.output-box {
+  background: rgba(0, 0, 0, 0.19);
+  border: 3px solid #68e6a8;
+  color: #68e6a8;
+  font-size: .85em;
+  font-weight: 100;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 10px;
+  resize: none;
+  height: 225px;
+  width: 225px;
+  text-shadow: 0 0 5px rgba(192, 244, 218, 0.5);
+  text-transform: uppercase;
+  overflow: auto;
+  /* text-decoration: underline; */
+}
+
+.ascii {
+  /* white-space: nowrap; */
+  text-align: center;
+  font-size: .25em;
+  color: #68e6a8;
+}
+
+.about {
+  animation: typing-text 3s;
+  overflow: hidden;
+  white-space: nowrap;
+  /* word-wrap: break-word; */
+}
+
+.about-news {
+  animation: typing-text 3s;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  /* word-wrap: break-word; */
+}
+
+.about-title {
+  animation: typing-text 3s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: underline;
+  margin-top: 1.5px;
+  
+}
+
+button.white {
+  margin-top: 10px;
+  font-size: 1em;
+  font-family: Consola;
+  text-decoration: none;
+  border: none;
+}
+
+button:focus {outline:0;}
+
+.white {
+  color: #68e6a8;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: Consola;
+}
+
+input-panel > button {
+  text-align: left;
+}
+
+.anchor {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #68e6a8;
+  color: #68e6a8;
+  text-decoration: none;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  /* animation: typing-text 3s infinite; */
+}
+
+.anchor-news {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #68e6a8;
+  color: #68e6a8;
+  text-decoration: none;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  /* word-wrap: break-word; */
+  animation: typing-text 3s infinite;
+}
+
+@keyframes typing-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 368px;
+  }
+}
+
+/* .App .panels .input-panel {
+  float: left;
+  max-width: 250px;
+  width: 50%;
+} */
+
+/* .App .panels .input-panel .input-box {
+  background: rgba(0, 0, 0, 0.19);
+  border: 3px solid #68e6a8;
+  color: #68e6a8;
+  font-size: 1.8em;
+  font-weight: 100;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 10px;
+  resize: none;
+  height: 225px;
+  width: 225px;
+  text-shadow: 0 0 5px rgba(192, 244, 218, 0.5);
+  text-transform: uppercase;
+} */
+
+/* .App .panels .output-panel {
+  float: right;
+  max-width: 250px;
+  width: 50%;
+} */
+
+/* .App .panels .input-panel .output-box {
+  background: rgba(0, 0, 0, 0.19);
+  border: 3px solid #68e6a8;
+  color: #68e6a8;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 1.8em;
+  font-weight: 100;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 10px;
+  resize: none;
+  height: 225px;
+  width: 225px;
+  text-shadow: 0 0 5px rgba(192, 244, 218, 0.5);
+  text-transform: uppercase;
+} */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
